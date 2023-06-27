@@ -1,3 +1,62 @@
 body {
   background-color: white;
 }
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.show-scores,
+.add-scores {
+  position: relative;
+}
+
+#refresh {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 3px 5px;
+  transition: all 0.3s;
+}
+
+table {
+  width: 300px;
+  border: 2px solid black;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+table tr td {
+  padding: 3px;
+}
+
+table tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-content: end;
+  flex-wrap: wrap-reverse;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#submit {
+  width: 100px;
+  float: right;
+}
