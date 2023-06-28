@@ -16,6 +16,13 @@ const getScroes = async () => {
   return scoreData;
 };
 
+getScroes().then(data => {
+  console.log('Data:', data);
+  renderScore(data)
+}).catch(error => {
+  console.log('Error:', error);
+});
+
 // Add score for user
 const postScroes = async (userName, userScore) => {
   const data = {
