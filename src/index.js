@@ -47,7 +47,14 @@ const postScroes = async (userName, userScore) => {
     body: JSON.stringify(data)
   });
   const scoreData = await scoreResponse.json();
-  alert(scoreData.result);
+//   alert(scoreData.result);
+  const successMessage = document.getElementById('score-add-success');
+  successMessage.innerHTML = scoreData.result;
+  setTimeout(() => {
+    successMessage.innerHTML = '';
+    document.getElementById('name').value = '';
+    document.getElementById('score').value = '';
+  }, 2000);
 };
 
 // Refresh score
