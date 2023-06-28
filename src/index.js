@@ -24,7 +24,7 @@ const renderScore = (scoreData) => {
     trElem += `<tr><td>${element.user}</td><td>${element.score}</td></tr>`;
   });
   tableBody.innerHTML = trElem;
-};  
+};
 
 getScroes().then((data) => {
   console.log('Data:', data);
