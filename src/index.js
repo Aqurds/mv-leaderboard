@@ -19,8 +19,8 @@ const getScroes = async () => {
 // Add score for user
 const postScroes = async (user, score) => {
   const data = {
-    "user": user,
-    "score": score
+    user: user,
+    score: score
   };
   const scoreResponse = await fetch(`${baseUrl}/games/${gameId}/scores/`, {
     method: 'POST',
@@ -37,7 +37,7 @@ const postScroes = async (user, score) => {
 const renderScore = (scoreData) => {
   const tableBody = document.getElementById('score-data');
   let trElem = '';
-  scoreData.result.forEach(element => {
+  scoreData.result.forEach((element) => {
     trElem += `<tr><td>${element.user}</td><td>${element.score}</td></tr>`;
   });
   tableBody.innerHTML = trElem;
@@ -56,6 +56,5 @@ submitButton.addEventListener('click', (e) => {
   e.preventDefault();
   const userName = document.getElementById('name').value;
   const userScore = document.getElementById('score').value;
-  console.log(userName, userScore);
   postScroes(userName, userScore);
 });
