@@ -16,10 +16,20 @@ const getScroes = async () => {
   return scoreData;
 };
 
-getScroes().then(data => {
+// Render score in Html
+const renderScore = (scoreData) => {
+  const tableBody = document.getElementById('score-data');
+  let trElem = '';
+  scoreData.result.forEach((element) => {
+    trElem += `<tr><td>${element.user}</td><td>${element.score}</td></tr>`;
+  });
+  tableBody.innerHTML = trElem;
+};  
+
+getScroes().then((data) => {
   console.log('Data:', data);
-  renderScore(data)
-}).catch(error => {
+  renderScore(data);
+}).catch((error) => {
   console.log('Error:', error);
 });
 
@@ -38,16 +48,6 @@ const postScroes = async (userName, userScore) => {
   });
   const scoreData = await scoreResponse.json();
   alert(scoreData.result);
-};
-
-// Render score in Html
-const renderScore = (scoreData) => {
-  const tableBody = document.getElementById('score-data');
-  let trElem = '';
-  scoreData.result.forEach((element) => {
-    trElem += `<tr><td>${element.user}</td><td>${element.score}</td></tr>`;
-  });
-  tableBody.innerHTML = trElem;
 };
 
 // Refresh score
