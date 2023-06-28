@@ -47,7 +47,6 @@ const postScroes = async (userName, userScore) => {
     body: JSON.stringify(data)
   });
   const scoreData = await scoreResponse.json();
-//   alert(scoreData.result);
   const successMessage = document.getElementById('score-add-success');
   successMessage.innerHTML = scoreData.result;
   setTimeout(() => {
