@@ -17,10 +17,10 @@ const getScroes = async () => {
 };
 
 // Add score for user
-const postScroes = async (user, score) => {
+const postScroes = async (userName, userScore) => {
   const data = {
-    user: user,
-    score: score
+    user: userName,
+    score: userScore
   };
   const scoreResponse = await fetch(`${baseUrl}/games/${gameId}/scores/`, {
     method: 'POST',
