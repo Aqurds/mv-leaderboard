@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  color: #72BA57;
+  color: #72ba57;
   font-size: 48px;
   font-weight: 900;
   background: rgb(28, 49, 20);
@@ -128,7 +128,6 @@ input {
 
 .add-scores form input {
   background: rgb(250, 192, 199);
-  border: none;
   color: red;
   border: 1px solid rgb(247, 144, 157);
   outline: none;
