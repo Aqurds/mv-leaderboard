@@ -10,7 +10,7 @@ h1 {
   color: #72BA57;
   font-size: 48px;
   font-weight: 900;
-  background: rgb(28,49,20);
+  background: rgb(28, 49, 20);
   width: 400px;
   padding: 20px 50px;
   margin: 100px auto;
@@ -27,7 +27,7 @@ h1 {
 }
 
 .show-scores-head {
-  background: rgb(201,121,0,.2);
+  background: rgb(201, 121, 0, 0.2);
   padding: 19px;
   display: flex;
   justify-content: start;
@@ -50,7 +50,7 @@ h1 {
 
 .add-scores h3 {
   color: red;
-  background: rgb(95,7,18);
+  background: rgb(95, 7, 18);
   padding: 20px;
   margin-top: 0;
   margin-bottom: 20px;
@@ -64,19 +64,19 @@ h1 {
   border: 2px solid #744600;
   cursor: pointer;
   padding: 5px 15px;
-  background: #DA8400;
+  background: #da8400;
   color: white;
-  box-shadow: 0px 0px 2px 2px rgba(65,39,0,.3);
+  box-shadow: 0px 0px 2px 2px rgba(65, 39, 0, 0.3);
   transition: all 0.3s;
 }
 
 #refresh:hover {
-  background: #B86F00;
+  background: #b86f00;
 }
 
 .scores {
   width: 300px;
-  border: 2px solid #FFEAC9;
+  border: 2px solid #ffeac9;
   padding: 0;
   margin: 0;
   margin-top: 20px;
@@ -88,11 +88,11 @@ h1 {
 }
 
 .scores tr:nth-child(odd) {
-  background-color: #FFDCA7;
+  background-color: #ffdca7;
 }
 
 .scores tr:nth-child(even) {
-  background-color: #FFF0DA;
+  background-color: #fff0da;
 }
 
 form {
@@ -112,25 +112,25 @@ input {
 #submit {
   width: 100px;
   float: right;
-  background: rgb(95,7,18);
+  background: rgb(95, 7, 18);
   color: white;
   border: none;
   transition: all 0.3s;
 }
 
 #submit:hover {
-  background: rgb(63,5,12);
+  background: rgb(63, 5, 12);
 }
 
 .show-scores h3 {
-  color: #FFAD30;
+  color: #ffad30;
 }
 
 .add-scores form input {
-  background: rgb(250,192,199);
+  background: rgb(250, 192, 199);
   border: none;
   color: red;
-  border: 1px solid rgb(247,144,157);
+  border: 1px solid rgb(247, 144, 157);
   outline: none;
 }
 
