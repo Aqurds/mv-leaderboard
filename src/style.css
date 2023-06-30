@@ -1,45 +1,90 @@
 body {
   background-color: white;
+  background-image: url(./images/main_bd_gaming.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
-  text-align: center;
+  color: #72BA57;
+  font-size: 48px;
+  font-weight: 900;
+  background: rgb(134,196,111, 0.2);
+  width: 400px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin: 100px auto;
+  box-shadow: 0px 0px 10px 10px rgb(35 61 25 / 30%);
 }
 
 .main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  min-height: 700px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding: 10px 50px;
+}
+
+.show-scores-head {
+  background: rgb(201,121,0,.2);
+  padding: 19px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.show-scores-head h3 {
+  margin: 0px;
 }
 
 .show-scores,
 .add-scores {
   position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 #refresh {
   position: absolute;
   top: 15px;
-  right: 0;
-  border: 2px solid black;
+  right: 15px;
+  border: 2px solid #744600;
   cursor: pointer;
-  padding: 3px 5px;
+  padding: 5px 15px;
+  background: #DA8400;
+  color: white;
+  box-shadow: 0px 0px 2px 2px rgba(65,39,0,.3);
   transition: all 0.3s;
 }
 
-table {
+#refresh:hover {
+  background: #B86F00;
+}
+
+.scores {
   width: 300px;
-  border: 2px solid black;
+  border: 2px solid #FFEAC9;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
   border-collapse: collapse;
 }
 
-table tr td {
+.scores tr td {
   padding: 3px;
 }
 
-table tr:nth-child(odd) {
-  background-color: lightgray;
+.scores tr:nth-child(odd) {
+  background-color: #FFDCA7;
+}
+
+.scores tr:nth-child(even) {
+  background-color: #FFF0DA;
 }
 
 form {
@@ -59,4 +104,8 @@ input {
 #submit {
   width: 100px;
   float: right;
+}
+
+.show-scores h3 {
+  color: #FFAD30;
 }
